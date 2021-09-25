@@ -1,0 +1,96 @@
+.c-banner {
+    position: relative;
+    width: 100vw;
+}
+
+.c-banner__top,
+.c-banner__bottom {
+    grid-column: main-start / main-end;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    left: -50px;
+}
+
+.c-banner__middle {
+    grid-column: bleed-start / bleed-end;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.c-banner__brand {
+}
+
+.c-banner__brand-heading {
+}
+
+.c-banner__brand-letter {
+    @include font-size(28);
+    font-weight: 500;
+    position: relative;
+    display: inline-block;
+    line-height: 100%;
+}
+
+.c-banner__intro {
+    @include font-size(1.8);
+    font-weight: 500;
+    line-height: 2.6rem;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.c-banner__experience {
+}
+
+.c-brand__experience-heading {
+}
+
+.c-banner__experience-letter {
+    @include font-size(28);
+    font-weight: 500;
+    position: relative;
+    display: inline-block;
+    line-height: 100%;
+}
+
+.c-banner__scroll {
+    display: flex;
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    padding: 0 50px;
+    bottom: 40px;
+    background-color: #ffffff;
+    border-radius: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    left: 160px;
+    z-index: 10;
+}
+
+.c-banner__scroll-inner {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 4px 0;
+}
+
+.c-banner__studio {
+    margin: 0 auto;
+    z-index: 10;
+}
+
+.c-banner__studio-heading {
+}
+
+.c-banner__studio-letter {
+    @include font-size(28);
+    font-weight: 500;
+    position: relative;
+    display: inline-block;
+    line-height: 100%;
+}
