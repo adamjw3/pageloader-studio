@@ -1,12 +1,22 @@
 import React from 'react';
 import FancyLink from './fancylink';
+import { motion } from 'framer-motion';
 
 function Header() {
     return (
-        <div className="c-header">
+        <motion.div
+            className="c-header"
+            initial={{ opacity: 0, y: -180 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+                ease: 'easeInOut',
+                duration: 1,
+                delay: 0.6,
+            }}
+        >
             <div className="l-grid">
                 <div className="c-header__inner">
-                    <FancyLink destination="/" a11yText="text" label="Ollie" extraClasses="c-header__logo" />
+                    <FancyLink destination="/" a11yText="text" label="Varial" extraClasses="c-header__logo" />
                     <nav className="c-header__nav">
                         <ul className="c-header__nav-items">
                             <li className="c-header__nav-item">
@@ -31,7 +41,7 @@ function Header() {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 }
 

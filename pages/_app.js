@@ -1,4 +1,4 @@
-import { AnimatePresence } from 'framer-motion';
+import { AnimatePresence, AnimateSharedLayout } from 'framer-motion';
 import { useRouter } from 'next/router';
 import { DefaultSeo } from 'next-seo';
 import { Seo } from '../helpers/seo.config';
@@ -10,9 +10,11 @@ function MyApp({ Component, pageProps }) {
     return (
         <>
             <DefaultSeo {...Seo} />
-            <AnimatePresence exitBeforeEnter>
-                <Component {...pageProps} key={router.asPath} />
-            </AnimatePresence>
+            <AnimateSharedLayout type="crossfade">
+                <AnimatePresence exitBeforeEnter>
+                    <Component {...pageProps} key={router.asPath} />
+                </AnimatePresence>
+            </AnimateSharedLayout>
         </>
     );
 }

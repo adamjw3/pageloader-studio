@@ -1,0 +1,71 @@
+.c-loader {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.c-loader__imagecontainer1 {
+    position: absolute;
+    transform-origin: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 400px;
+    left: 16%;
+    bottom: 14%;
+}
+
+.c-loader__imagecontainer2 {
+    @include horizontal-center(absolute);
+    position: absolute;
+    transform-origin: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 500px;
+    bottom: 50%;
+    left: 33%;
+}
+
+.c-loader__imagecontainer3 {
+    position: absolute;
+    transform-origin: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    right: 12%;
+    top: 8%;
+}
+
+.c-loader__imagecontainer4 {
+    position: absolute;
+    transform-origin: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    width: 40%;
+    right: 20%;
+    bottom: 10%;
+}
+
+.c-loader__imagecontainer5 {
+    position: absolute;
+    transform-origin: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    left: 14%;
+    top: 12%;
+}
+
+.c-loader__image {
+    width: 100%;
+    object-fit: fill;
+    &--1 {
+    }
+}

@@ -10,7 +10,7 @@
     justify-content: flex-start;
     align-items: center;
     position: relative;
-    left: -50px;
+    left: -40px;
 }
 
 .c-banner__middle {
@@ -25,6 +25,7 @@
 }
 
 .c-banner__brand-heading {
+    overflow: hidden;
 }
 
 .c-banner__brand-letter {
@@ -69,7 +70,7 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    left: 160px;
+    left: 100px;
     z-index: 10;
 }
 
